@@ -1,7 +1,6 @@
 /*
-************** TASK 1 **************
+************** TASK 1.1 **************
 */
-
 const usdToUah = 26.0;
 const uahToUsd = 1 / 26;
 
@@ -15,14 +14,19 @@ function currencyConverter(value, curse) {
     return typeof(value) == "number" ? value * curse : null;
 }
 
-function logMinMax(array) {
-    let min = Math.min(...array);
-    let max = Math.max(...array);
-
-    console.info("Min is: " + min);
-    console.info("Max is: " + max);
+/*
+************** TASK 1.2 **************
+*/
+function minMax(array) {
+    return {
+        Min: Math.min(...array),
+        Max: Math.max(...array)
+    }
 }
 
+/*
+************** TASK 1.3 **************
+*/
 function findAverage(array) {
     if (array.length == 0)
         return 0;
