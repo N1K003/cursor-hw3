@@ -8,8 +8,8 @@ const uahToUsd = 1 / 26;
 
 /*
 * usage:
-* currencyConverter(uahToUsd, 150)
-* currencyConverter(usdToUah, 150)
+* currencyConverter(150, uahToUsd)
+* currencyConverter(150, usdToUah)
 */
 function currencyConverter(value, curse) {
     return typeof(value) == "number" ? value * curse : null;
