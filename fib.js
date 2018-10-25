@@ -1,5 +1,5 @@
 function fib(n) {
-    if (typeof(n) != "n")
+    if (typeof(n) != "number")
         return null;
     if (n <= 1)
         return n;
