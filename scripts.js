@@ -28,7 +28,7 @@ function minMax(array) {
 ************** TASK 1.3 **************
 */
 function findAverage(array) {
-    if (array.length == 0)
+    if (!array.length)
         return 0;
 
     let sum = 0;
