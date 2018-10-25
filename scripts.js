@@ -2,7 +2,7 @@
 ************** TASK 1.1 **************
 */
 const usdToUah = 26.0;
-const uahToUsd = 1 / 26;
+const uahToUsd = 1 / 26.0;
 
 
 /*
