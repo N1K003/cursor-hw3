@@ -11,7 +11,7 @@ const uahToUsd = 1 / 26.0;
 * currencyConverter(150, usdToUah)
 */
 function currencyConverter(value, curse) {
-    return typeof(value) == "number" ? value * curse : null;
+    return typeof(value) === "number" ? value * curse : null;
 }
 
 /*
@@ -44,7 +44,7 @@ function findAverage(array) {
 */
 
 function haha(number) {
-    if (number == 1)
+    if (number === 1)
         return number;
 
     console.info(number);

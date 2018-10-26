@@ -1,7 +1,7 @@
 function halfNYTree(n) {
-    if (typeof(n) != "number")
+    if (typeof(n) !== "number")
         return null;
-    if (n == 0)
+    if (n === 0)
         return;
 
     halfNYTree(n - 1);
