@@ -27,26 +27,16 @@ function minMax(array) {
 /*
 ************** TASK 1.3 **************
 */
-function findAverage(array) {
-    if (!array.length)
-        return 0;
-
-    let sum = 0;
-    for (let i = 0; i < array.length; i++) {
-        sum += array[i];
-    }
-
-    return sum / array.length;
-}
+const findAverage = (array) => array.reduce((el, current) => el + current, 0);
 
 /*
 ************** TASK 2 **************
 */
 
 function haha(number) {
+    console.info(number);
     if (number === 1)
         return number;
 
-    console.info(number);
     haha(number - 1);
 }
