@@ -27,7 +27,12 @@ function minMax(array) {
 /*
 ************** TASK 1.3 **************
 */
-const findAverage = (array) => array.reduce((el, current) => el + current, 0);
+function findAverage(array) {
+    if (!array.length)
+        return 0;
+
+    return array.reduce((el, current) => el + current, 0) / array.length;
+}
 
 /*
 ************** TASK 2 **************
