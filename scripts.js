@@ -11,7 +11,8 @@ const uahToUsd = 1 / 26.0;
 * currencyConverter(150, usdToUah)
 */
 function currencyConverter(value, curse) {
-    return typeof(value) === "number" ? value * curse : null;
+    const val = parseFloat(value);
+    return isNaN(val) ? null : val * curse;
 }
 
 /*
